@@ -4,21 +4,21 @@
 	font-family: 'Noto Sans KR';
 	font-weight: 700;
 	font-display: swap;
-	src: local('Noto Sans KR'), url(../font/NotoSansKR-Bold.ttf) format('truetype');
+	src: url(../font/NotoSansKR-Bold.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'Noto Sans KR';
 	font-weight: 500;
 	font-display: swap;
-	src: local('Noto Sans KR'), url(../font/NotoSansKR-Medium.ttf) format('truetype');
+	src: url(../font/NotoSansKR-Medium.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'Noto Sans KR';
 	font-weight: 300;
 	font-display: swap;
-	src: local('Noto Sans KR'), url(../font/NotoSansKR-Light.ttf) format('truetype');
+	src: url(../font/NotoSansKR-Light.ttf) format('truetype');
 }
 
 /* CSS Reset */

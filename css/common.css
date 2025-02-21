@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+.bold {
+  font-weight: 500;
+}
 .card_wrap {
   position: relative;
   max-width: 241px;
@@ -7,12 +10,85 @@
   margin: 100px auto;
   background-color: #E7344C;
   aspect-ratio: 241 / 156;
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
   color: #fff;
   transform: scale(2);
   transform-origin: center top;
 }
 .card_wrap p {
   font-size: 7px;
+}
+.card_text {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 14px 0 13px;
+  row-gap: 12px;
+  column-gap: 20px;
+}
+.card_text > div:nth-child(odd) {
+  width: 72px;
+}
+.card_text input {
+  width: 100%;
+  outline: none;
+  color: #fff;
+  font-size: 7px;
+  line-height: 7.7px;
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
+}
+.card_text input:placeholder-shown {
+  border: 1px solid whitesmoke;
+}
+.card_text input::placeholder {
+  color: whitesmoke;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+input.name_kr {
+  font-size: 14px;
+  line-height: 15.4px;
+  font-weight: 700;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.part {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+input.part_kr {
+  font-weight: 500;
+}
+input.part_en {
+  font-weight: 9.8px;
+  font-weight: 500;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 9.8px;
+}
+.address > .bold {
+  line-height: 7.7px;
+}
+.tel_wrap {
+  display: flex;
+  gap: 4px;
+}
+.tel {
+  display: flex;
+  gap: 1px;
+  line-height: 7.7px;
+  align-items: center;
 }
 .logo {
   position: absolute;
