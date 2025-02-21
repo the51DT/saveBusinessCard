@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.card_wrap {
+  position: relative;
+  max-width: 241px;
+  width: 100%;
+  margin: 100px auto;
+  background-color: #E7344C;
+  aspect-ratio: 241 / 156;
+  color: #fff;
+  transform: scale(2);
+  transform-origin: center top;
+}
+.card_wrap p {
+  font-size: 7px;
+}
+.logo {
+  position: absolute;
+  left: 5.74273858921%;
+  bottom: 9.35897435897%;
+  width: 10.57261410788%;
+}
