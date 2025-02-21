@@ -10,12 +10,15 @@
   <title>The51 명함 이미지 생성</title>
   <link rel="stylesheet" href="./css/reset.css"/>
   <link rel="stylesheet" href="./css/common.css"/>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 </head>
 <body>
   <div class="wrap">
     <div class="info">
       <h1>The51 명함 이미지 생성</h1>
-      <h2>흰색테두리 영역에 정보를 입력해주세요</h2>
+      <p>흰색테두리 영역에 정보를 입력해주세요</p>
     </div>
 
     <div class="card_wrap">
@@ -48,6 +51,58 @@
 
       <img class="logo" src="./img/logo.svg">
     </div>
+
+    <button class="btn_down">이미지 저장</button>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const card = document.querySelector(".card_wrap");
+      const button = document.querySelector(".btn_down");
+
+      button.addEventListener("click", () => {
+        html2canvas(card, {
+          useCORS: true,
+          onclone: (clonedDoc) => {
+            clonedDoc.querySelectorAll("input, textarea").forEach((el) => {
+              const span = clonedDoc.createElement("p");
+              span.textContent = el.value;
+              const style = window.getComputedStyle(el);
+              span.style.cssText = `
+                width: ${el.offsetWidth}px;
+                height: ${el.offsetHeight}px;
+                font: ${style.font};
+                color: ${style.color};
+                background: ${style.background};
+                border: ${style.border};
+                padding: ${style.padding};
+                text-align: ${style.textAlign};
+                line-height: ${style.lineHeight};
+                display: flex;
+                align-items: center;
+                justify-content: ${style.textAlign};
+              `;
+              el.replaceWith(span);
+            });
+          }
+        }).then(function(canvas) {
+          saveAs(canvas.toDataURL("image/png"), "the51_명함.png");
+        });
+      })
+      function saveAs(url, filename) {
+        var link = document.createElement("a");
+        if (typeof link.download === "string") {
+          console.log("dfas")
+          link.href = url;
+          link.download = filename;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } else {
+          window.open(url);
+        }
+      }
+    })
+  </script>
 </body>
 </html>
