@@ -42,6 +42,7 @@ h1 {
   width: 72px;
 }
 .card_text input {
+  box-sizing: border-box;
   flex-shrink: 1;
   width: 100%;
   outline: none;
