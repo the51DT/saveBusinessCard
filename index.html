@@ -113,11 +113,14 @@
 
       const select = document.querySelector(".select_logo select");
       const logo = document.querySelector(".logo")
+      const comName = document.querySelector(".address > .bold");
       select.addEventListener("change" , () => {
         if (select.value === 'The51') {
           logo.src = "./img/logo.svg"
+          comName.textContent = "더피프티원"
         } else {
           logo.src = "./img/logo_x.svg"
+          comName.textContent = "더피프티원엑스"
         }
       })
     })
