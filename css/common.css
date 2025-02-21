@@ -45,6 +45,7 @@ h1 {
   box-sizing: border-box;
   flex-shrink: 1;
   width: 100%;
+  height: min-content;
   outline: none;
   color: #fff;
   font-size: 7px;
@@ -83,7 +84,7 @@ input.part_kr {
   font-weight: 500;
 }
 input.part_en {
-  font-weight: 9.8px;
+  line-height: 9.8px;
   font-weight: 500;
 }
 .address {
