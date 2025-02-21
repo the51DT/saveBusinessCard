@@ -3,6 +3,11 @@
 .bold {
   font-weight: 500;
 }
+.info {
+  margin-top: 30px;
+  font-family: 'Noto Sans KR';
+  text-align: center;
+}
 .card_wrap {
   position: relative;
   max-width: 241px;
@@ -30,6 +35,7 @@
   width: 72px;
 }
 .card_text input {
+  flex-shrink: 1;
   width: 100%;
   outline: none;
   color: #fff;
@@ -58,6 +64,7 @@ input.name_kr {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  max-width: 121px;
 }
 .part {
   display: flex;
@@ -99,6 +106,6 @@ input.part_en {
 
 @media screen and (max-width: 550px) {
   .card_wrap {
-    transform: scale(1);
+    transform: scale(1.3);
   }
 }
