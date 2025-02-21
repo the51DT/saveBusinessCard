@@ -96,3 +96,9 @@ input.part_en {
   bottom: 9.35897435897%;
   width: 10.57261410788%;
 }
+
+@media screen and (max-width: 550px) {
+  .card_wrap {
+    transform: scale(1);
+  }
+}
