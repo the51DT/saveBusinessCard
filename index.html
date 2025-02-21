@@ -19,6 +19,14 @@
     <div class="info">
       <h1>The51 명함 이미지 생성</h1>
       <p>흰색테두리 영역에 정보를 입력해주세요</p>
+
+      <div class="select_logo">
+        <p>The51 / The51 X 로고 선택</p>
+        <select>
+          <option selected>The51</option>
+          <option>The51 X</option>
+        </select>
+      </div>
     </div>
 
     <div class="card_wrap">
@@ -102,6 +110,16 @@
           window.open(url);
         }
       }
+
+      const select = document.querySelector(".select_logo select");
+      const logo = document.querySelector(".logo")
+      select.addEventListener("change" , () => {
+        if (select.value === 'The51') {
+          logo.src = "./img/logo.svg"
+        } else {
+          logo.src = "./img/logo_x.svg"
+        }
+      })
     })
   </script>
 </body>

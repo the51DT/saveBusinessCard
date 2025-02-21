@@ -15,6 +15,14 @@ h1 {
   margin-top: 10px;
   font-size: 18px;
 }
+.select_logo {
+  margin-top: 30px;
+}
+.select_logo select {
+  margin-top: 18px;
+  padding: 8px;
+  width: 200px;
+}
 .card_wrap {
   position: relative;
   max-width: 241px;
@@ -108,9 +116,9 @@ input.part_en {
 }
 .logo {
   position: absolute;
-  left: 5.74273858921%;
-  bottom: 9.35897435897%;
-  width: 10.57261410788%;
+  left: 14px;
+  bottom: 14.68px;
+  height: 21.23px;
 }
 .btn_down {
   display: block;
