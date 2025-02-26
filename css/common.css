@@ -54,10 +54,10 @@ h1 {
   row-gap: 12px;
 }
 .card_text > div:nth-child(odd) {
-  width: 72px;
+  flex-basis: 72px;
 }
 .card_text > div:nth-child(even) {
-  width: 122px;
+  flex-basis: 122px;
 }
 .card_text input {
   box-sizing: border-box;
