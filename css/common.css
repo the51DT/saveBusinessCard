@@ -55,9 +55,11 @@ h1 {
 }
 .card_text > div:nth-child(odd) {
   flex-basis: 72px;
+  max-width: 72px;
 }
 .card_text > div:nth-child(even) {
   flex-basis: 122px;
+  max-width: 122px;
 }
 .card_text input {
   box-sizing: border-box;
@@ -91,7 +93,6 @@ input.name_kr {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  max-width: 121px;
 }
 .part {
   display: flex;
