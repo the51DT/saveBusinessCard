@@ -5,8 +5,7 @@ html,body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
-  font-size: 10px;
-  line-height: 1.5;
+  width: 100vw;
 }
 .bold {
   font-weight: 500;
@@ -33,9 +32,9 @@ h1 {
 }
 .card_wrap {
   position: relative;
-  max-width: 24.1em;
+  max-width: 241px;
   width: 100%;
-  margin: 5em auto;
+  margin: 50px auto;
   background-color: #E7344C;
   aspect-ratio: 241 / 156;
   font-family: 'Noto Sans KR';
@@ -45,22 +44,22 @@ h1 {
   transform-origin: center top;
 }
 .card_wrap p {
-  font-size: 0.7em !important;
+  font-size: 7px !important;
 }
 .card_text {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1.2em 1.4em 0;
-  row-gap: 1.2em;
+  padding: 12px 13px 0 14px;
+  row-gap: 12px;
 }
 .card_text > div:nth-child(odd) {
-  flex-basis: 7.2em;
-  max-width: 7.2em;
+  flex-basis: 72px;
+  max-width: 72px;
 }
 .card_text > div:nth-child(even) {
-  flex-basis: 12.2em;
-  max-width: 12.2em;
+  flex-basis: 122px;
+  max-width: 122px;
 }
 .card_text input {
   box-sizing: border-box;
@@ -68,8 +67,8 @@ h1 {
   height: min-content;
   outline: none;
   color: #fff;
-  font-size: 0.7em !important;
-  line-height: 0.77em;
+  font-size: 7px !important;
+  line-height: 7.7px;
   font-family: 'Noto Sans KR';
   font-weight: 300;
   padding: 0;
@@ -83,40 +82,42 @@ h1 {
 .name {
   display: flex;
   flex-direction: column;
-  gap: 0.1em;
+  gap: 1px;
 }
 input.name_kr {
-  font-size: 1.4em !important;
-  line-height: 1.54em;
+  font-size: 14px !important;
+  line-height: 15.4px;
   font-weight: 700;
 }
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 0.2em;
+  gap: 2px;
 }
 .part {
   display: flex;
   flex-direction: column;
-  gap: 0.1em;
+  gap: 1px;
 }
 input.part_kr {
   font-weight: 500;
 }
 input.part_en {
-  line-height: 0.98em;
+  line-height: 9.8px;
   font-weight: 500;
 }
 .address {
   display: flex;
   flex-direction: column;
-  gap: 0.1em;
-  line-height: 0.98em;
+  gap: 1px;
+  line-height: 9.8px;
 }
 .address > .bold {
-  line-height: 0.77em;
+  line-height: 7.7px;
+  letter-spacing: -0.14px;
 }
 .address .tel {
+  letter-spacing: -0.07px;
   white-space: nowrap;
 }
 .address .tel .bold {
@@ -124,19 +125,19 @@ input.part_en {
 }
 .tel_wrap {
   display: flex;
-  gap: 0.4em;
+  gap: 4px;
 }
 .tel {
   display: flex;
-  gap: 0.1em;
-  line-height: 0.77em;
+  gap: 1px;
+  line-height: 7.7px;
   align-items: center;
 }
 .logo {
   position: absolute;
-  left: 1.4em;
-  bottom: 1.468em;
-  height: 2.123em;
+  left: 14px;
+  bottom: 14.68px;
+  height: 21.23px;
 }
 .btn_down {
   display: block;
@@ -151,7 +152,10 @@ input.part_en {
 }
 
 @media screen and (max-width: 550px) {
+  .card_wrap {
+    transform: scale(1.5);
+  }
   .btn_down {
-    margin: 200px auto;
+    margin-top: 100px;
   }
 }
