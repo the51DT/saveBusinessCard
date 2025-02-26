@@ -46,7 +46,7 @@ h1 {
 .card_text {
   display: flex;
   flex-wrap: wrap;
-  padding: 12px 14px 0 13px;
+  padding: 12px 0px 0 14px;
   row-gap: 12px;
   column-gap: 20px;
 }
