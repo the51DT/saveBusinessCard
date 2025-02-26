@@ -117,6 +117,7 @@ input.part_en {
 }
 .address .tel {
   letter-spacing: -0.07px;
+  white-space: nowrap;
 }
 .address .tel .bold {
   letter-spacing: 0;
