@@ -110,28 +110,20 @@ input.part_en {
 }
 .address > .bold {
   line-height: 7.7px;
-  /* letter-spacing: -0.14px; */
+  letter-spacing: -0.14px;
 }
 .address .tel {
-  /* letter-spacing: -0.07px; */
+  letter-spacing: -0.07px;
 }
 .address .tel .bold {
   letter-spacing: 0;
-}
-.address_tel {
-  display: flex;
-  gap: 4px;
-}
-.address_tel .bold {
-  display: inline-block;
-  margin-right: 1px;
 }
 .tel_wrap {
   display: flex;
   gap: 4px;
 }
 .tel {
-  display: inline-flex;
+  display: flex;
   gap: 1px;
   line-height: 7.7px;
   align-items: center;
