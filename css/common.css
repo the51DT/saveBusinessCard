@@ -51,7 +51,7 @@ h1 {
   column-gap: 20px;
 }
 .card_text > div:nth-child(odd) {
-  width: 50px;
+  width: 72px;
 }
 .card_text input {
   box-sizing: border-box;
