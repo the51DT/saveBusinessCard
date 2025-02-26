@@ -5,7 +5,6 @@ html,body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
   text-size-adjust: none;
-  width: 100vw;
 }
 .bold {
   font-weight: 500;
