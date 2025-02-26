@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+html,body {
+  width: 100vw;
+}
 .bold {
   font-weight: 500;
 }
