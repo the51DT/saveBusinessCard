@@ -45,13 +45,16 @@ h1 {
 }
 .card_text {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 12px 0px 0 14px;
+  padding: 12px 13px 0 14px;
   row-gap: 12px;
-  column-gap: 20px;
 }
 .card_text > div:nth-child(odd) {
   width: 72px;
+}
+.card_text > div:nth-child(even) {
+  width: 122px;
 }
 .card_text input {
   box-sizing: border-box;
