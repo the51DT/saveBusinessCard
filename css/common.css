@@ -40,7 +40,7 @@ h1 {
   font-family: 'Noto Sans KR';
   font-weight: 300;
   color: #fff;
-  /* transform: scale(2); */
+  transform: scale(2);
   transform-origin: center top;
 }
 .card_wrap p {
@@ -152,7 +152,7 @@ input.part_en {
 
 @media screen and (max-width: 550px) {
   .card_wrap {
-    /* transform: scale(1.3); */
+    transform: scale(1.3);
   }
   .btn_down {
     margin-top: 100px;
