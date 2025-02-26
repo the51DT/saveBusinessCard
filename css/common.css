@@ -63,6 +63,7 @@ h1 {
   line-height: 7.7px;
   font-family: 'Noto Sans KR';
   font-weight: 300;
+  padding: 0;
 }
 .card_text input:placeholder-shown {
   border: 1px solid whitesmoke;
@@ -106,6 +107,13 @@ input.part_en {
 }
 .address > .bold {
   line-height: 7.7px;
+  letter-spacing: -0.14px;
+}
+.address .tel {
+  letter-spacing: -0.07px;
+}
+.address .tel .bold {
+  letter-spacing: 0;
 }
 .tel_wrap {
   display: flex;
